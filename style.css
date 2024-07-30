@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(to right bottom, #0043e0, #00dfe3);
+  background-repeat: no-repeat;
+}
+.main {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  width: 50%;
+  background-color: white;
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.top {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.top h2 {
+  font-size: 22px;
+  font-weight: 450;
+  color: #343434d6;
+}
+
+.userinput {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px 10px;
+}
+
+.userinput input {
+  font-size: 20px;
+  font-weight: 500;
+  color: #343434d6;
+  width: 20%;
+  height: 50px;
+  border: none;
+  outline: none;
+  border: 1px solid #999999ad;
+  border-radius: 8px;
+  padding: 20px 10px;
+  text-align: center;
+}
+.userinput button {
+  display: flex;
+  width: 120px;
+  height: 45px;
+  border-radius: 18px;
+  background-color: #00a4e2;
+  color: white;
+  font-size: 18px;
+  border: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.resp {
+  font-weight: 450;
+  color: #343434d6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 18px;
+  flex-direction: column;
+}
+
+.resp .guess-count {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.result {
+  color: #343434e8;
+  font-size: 22px;
+}
+
+@media only screen and (max-width: 980px) {
+  .main {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .main {
+    width: 90%;
+  }
+  .top h2{
+    font-size: 18px;
+  }
+  .resp{
+    font-size: 16px;
+  }
+  .result{
+    font-size: 18px;
+  }
+}
